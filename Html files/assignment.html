@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <!--Internal CSS-->
+    <style>
+        table,th,tr,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        td,th{
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!--Logo Header-->
+    <header class="header-top">
+        <img src="https://img.freepik.com/premium-photo/solar-system-icon-planets-space-logo-illustration-art_762678-12396.jpg" height="90px" alt="solar_system" width="90px">
+        <hr>
+    </header>
+    <!-- 2nd Header-->
+    <header class="second-header">
+    <h1>Explore Our Solar System <br>Through Data</h1>
+    <p>Understand the planets not just by name, but by measurable facts. From size and mass to gravity and density, this page breaks down the solar system in a clear and data-driven way.</p>
+    <a href="#table-page">Explore the data</a>  &nbsp; &nbsp; &nbsp;
+    <a href="#form-bottom">Contact us</a>
+    <hr>
+    </header>
+    <!--Main Page-->
+    <main class="main-page">
+        <!--First & Video Section-->
+        <section class="video">
+        <h2>Satellite View of Earth</h2>
+        <p>This short video show the satellite view of planet earth that was covered from space.</p>
+        <video controls muted loop autoplay width="600px" height="300px">
+         <source src="https://assets.mixkit.co/videos/46148/46148-720.mp4" type="video/mp4">
+         <source src="https://assets.mixkit.co/videos/46148/46148-720.ogg" type="video/ogg">
+        </video>
+        <hr>
+        </section>
+        <!--Second & Image Section-->
+        <section class="image">
+        <h3>Planet Earth</h3>
+        <p>The images below show our planet earth that has been home to over <strong>8 billion</strong> people today.</p>
+        <figure>
+        <img src="https://tse1.mm.bing.net/th/id/OIP.BbUS9RhgGKBnaqlZzyZmDQHaFV?rs=1&pid=ImgDetMain&o=7&rm=3" alt="View of earth from space" height="300px" width="450px">
+        <figcaption>Our Planet Earth</figcaption>
+        </figure>
+        <hr>
+        </section>
+        <!--Third & Table Section-->
+        <section class="table" id="table-page">
+        <h4>Planetary Facts At Glance:</h4>
+        <p>Below is a comparative table of major planets in our solar system. The data highlights key physical properties used by astronomers and researchers worldwide.</p>
+        <table>
+            <caption>Data about the planets of our solar system (Planetary Facts Taken From NASA)</caption>
+            <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Mass 10 24kg</th>
+                <th scope="col">Diameter (km)</th>
+                <th scope="col">Density (kg/m<sup>3</sup>)</th>
+                <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td rowspan="4" colspan="2">Terrestrial planets</td>
+                <td>Mercury</td>
+                <td>0.330</td>
+                <td>4,878</td>
+                <td>5427</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>0.330</td>
+                <td>4,878</td>
+                <td>5427</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td>Earth</td>
+                <td>0.330</td>
+                <td>4,878</td>
+                <td>5427</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>0.330</td>
+                <td>4,878</td>
+                <td>5427</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Jovian Planets</td>
+                <td rowspan="2">Gas Giants</td>
+                <td>Jupiter</td>
+                <td>0.330</td>
+                <td>4,878</td>
+                <td>5427</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>0.330</td>
+                <td>4,878</td>
+                <td>5427</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Ice Giants</td>
+                <td>Uranus</td>
+                <td>0.330</td>
+                <td>4,878</td>
+                <td>5427</td>
+                <td>3.7</td>
+            </tr>
+            <tr>
+                <td>Neptune</td>
+                <td>0.330</td>
+                <td>4,878</td>
+                <td>5427</td>
+                <td>3.7</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Dwarf Planets</td>
+                    <td>Pluto</td>
+                    <td>0.330</td>
+                    <td>4,878</td>
+                    <td>5427</td>
+                    <td>3.7</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        </section>
+        <!--Fourth/Final & Form Section-->
+        <section class="form-area">
+            <h5>Have Questions About Planetary Science</h5>
+            <p>Interested in learning about space, astronomy, or how planetary data is collected and analyzed?</p>
+            <form>
+            <label for="F-name"><strong>Full Name*</strong></label><br>
+            <input type="text" id="F-name" name="F-name" required minlength="10" maxlength="20" placeholder="Full Name"><br><br>
+            <label for="email"><strong>Email*</strong></label><br>
+            <input type="email" id="email" name="email" required placeholder="example@example.com"><br><br>
+            <label for="city"><strong>City*</strong></label><br>
+            <select id="city" name="city" required>
+                <option value="">Select Your City</option>
+                <option value="Agunbiade">Agunbiade</option>
+                <option value="A-Odofin">Amuwo-Odofin</option>
+                <option value="Apapa">Apapa</option>
+                <option value="Beachland">Beachland</option>
+                <option value="Festac">Festac</option>
+                <option value="Olodi-Apapa">Olodi-Apapa</option>
+                <option value="Obollo">Obollo</option>
+                <option value="Amuda">Amuda</option>
+                <option value="Shokunbi">Shokunbi</option>
+                <option value="Satellite">Satellite Town</option>
+            </select><br><br>
+            <label for="p-number"><strong>Phone Number*</strong></label><br>
+            <input type="tel" id="p-number" name="p-number" required maxlength="11" placeholder="Please enter a valid phone number"><br><br>
+            <label for="message"><strong>Message*</strong></label><br>
+            <textarea id="message" name="message" rows="7" cols="40" placeholder="Enter your message" maxlength="100" required></textarea><br><br>
+            <p><strong>How should we contact you?*</strong></p>
+            <input type="radio" name="option" id="contact-phone" value="phone" required>
+            <label for="contact-phone">Phone</label>
+            <input type="radio" name="option" value="email" id="email-address" required>
+            <label for="email-address">Email</label>
+            <input type="radio" name="option" value="both" id="both-options" required>
+            <label for="both-options">Both</label>
+            <p><strong>How did you hear about us?*</strong></p>
+            <input type="checkbox" name="social" value="friend" id="friend" required>
+            <label for="friend">Friend</label>
+            <input type="checkbox" name="social" value="TS Academy" id="ts-academy" required>
+            <label for="ts-academy">TS Academy</label>
+            <input type="checkbox" name="social" value="Others" id="others" required>
+            <label for="others">Others</label><br><br>
+            <button type="submit" id="form-bottom" title="Click to submit" name="button">Submit</button>
+            </form>
+        </section>
+        <hr>
+    </main>
+    <!--Footer-->
+    <footer class="end-page">
+        <p>About</p>
+        <nav>
+            <ul>
+               <li><a href="#">Planetary Facts</a></li><br>
+               <li><a href="#">Gallery</a></li><br>
+               <li><a href="#">World Records</a></li><br>
+                <li><a href="#">Guides</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <p>&copy;2026 Gilbert Akhagbemhe. &nbsp; &nbsp;Design By Gilbert  &nbsp; &nbsp; &nbsp;All Rights Reserved</p>
+        <p>Privacy Policy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Terms & Conditions</p>
+    </footer>
+</body>
+</html>
