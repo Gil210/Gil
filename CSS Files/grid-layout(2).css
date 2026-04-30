@@ -1,0 +1,64 @@
+.boss{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-areas: "header header header main main main main aside aside"
+    "header header header nav nav section section article article"
+    "header header header address address footer footer article article";
+    height: 80vh;
+}
+h1{
+    font-size: 4vw;
+}
+.boss>*{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.worker{
+    border: 1px solid black;
+    border: none;
+}
+header{
+    /* color: white; */
+    grid-area: header;
+    text-align: center;
+    background-color: skyblue;
+}
+main{
+    grid-area: main;
+    text-align: center;
+    background-color: skyblue;
+}
+aside{
+    grid-area: aside;
+    text-align: center;
+    background-color: grey;
+}
+nav{
+    grid-area: nav;
+    text-align: center;
+    background-color: skyblue;
+    padding: 2px;
+}
+section{
+    grid-area: section;
+    text-align: center;
+    background-color: grey;
+}
+article{
+    grid-area: article;
+    text-align: center;
+    background-color: skyblue;
+}
+address{
+    grid-area: address;
+    text-align: center;
+    background-color: grey;
+}
+footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: skyblue;
+}
