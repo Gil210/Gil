@@ -1,0 +1,50 @@
+/*This is how to write comments in CSS*/
+/*Read notes for more understanding about these selectors*/
+/*ID selectors*/
+#special{
+    background: yellow;
+}
+/*class selectors*/
+.alert{
+    border: 2px solid grey;
+}
+/*Multiple class selectors*/
+.alert.stop{
+    background: red;
+}
+/*Multiple class selectors*/
+.alert.go{
+    background:green;
+}
+/*child/children selectors*/
+section >p{
+    border: 2px solid green;
+}
+/*Descendants selectors*/
+section span{
+    background-color:lightblue;
+    color: brown;
+}
+/*sibling selectora*/
+h1+p{
+    font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+}
+/*Pseudo class selectors*/
+a:hover{
+    color: green;
+}
+/*Nesting selectors (Descendants)*/
+/*This is the same as the descendants selectors above but the only difference is that it's nested and more arranged than the initial one*/
+section {
+    span{
+   color:brown ;
+   background-color: lightblue;
+    }
+}
+/*Nested Pseudo class selectors*/
+a{
+    &:hover{
+        color: green;
+    }
+}
