@@ -1,0 +1,43 @@
+.container{
+    display: grid;
+    gap: 20px;
+    padding: 2px;
+    margin: 5px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas:"header header header header header header"
+    "aside aside main main main main"
+    "aside aside section section section section"
+    "footer footer footer footer footer footer";
+    height: 90vh;
+}
+.container>*{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 8px;
+}
+header{
+    grid-area: header;
+    text-align: center;
+    background-color: green;
+}
+aside{
+    grid-area: aside;
+    text-align: center;
+    background-color: red;
+}
+main{
+    grid-area: main;
+    text-align: center;
+    background-color: yellow;
+}
+section{
+    grid-area: section;
+    text-align: center;
+    background-color: purple;
+}
+footer{
+    text-align: center;
+    grid-area: footer;
+    background-color: skyblue;
+}
