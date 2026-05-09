@@ -1,0 +1,60 @@
+/* My font. Not compulsory */
+@font-face {
+    font-family: ENG;
+    src: url("/Fonts/Lora-Regular.woff2") format("woff2");
+    src: url("/Fonts/Lora-Regular.woff") format("woff");
+}
+*{
+    font-family: ENG;
+}
+/* Sidebar area */
+.side-bar{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+/* Sidebar links */
+.side-bar a{
+    float: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 16px;
+    color: black;
+}
+/* Active/current link */
+.side-bar a.active{
+    background-color: black;
+    color: white;
+}
+/* Links on mouse-over */
+.side-bar a:hover:not(.active){
+    background-color: red;
+}
+/* Page Content Margin-left on the sidebar should match the width*/
+div.main-con{
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+/* Responsive  web design for screens (Laptops and tablets that are not the same width in a laptop */
+@media screen and (max-width:700px) {
+    .side-bar{
+        width:100%;
+        position: relative;
+        height: auto;
+    }
+    .side-bar a{float:left;}
+    div.content{margin-left: 0;}
+    }
+    /* Responsive web design for phones and smaller screens to fit in */
+    @media screen and (min-width:200px){
+        .side-bar a{
+            text-align: center;
+            float:none;    
+    }
+    }
