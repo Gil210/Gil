@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Bio Data:</legend>
+        <label for="f_name">First Name:</label>
+        <input type="text" id="f_name" name="f_name" placeholder="Gilbert" maxlength="9" required>
+        <br><br><label for="l_name">Last Name:</label>
+        <input type="text" id="l_name" name="l_name" placeholder="Akhagbemhe" maxlength="9">
+        <br><br><label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+    </fieldset>
+    <label for="F_clubs">Select Your Football Club:</label>
+    <select id="F_clubs" name="F_clubs">
+        <optgroup label="Germany">
+            <option value="Dortmund">Dortmund</option>
+            <option value="Bayern">Bayern</option>
+            <option value="Stuttgart">Stuttgart</option>
+            <option value="Frankfurt">Frankfurt</option>
+            </optgroup>
+            <optgroup label="England">
+                <option value="Man U">Man United</option>
+                <option value="Chelsea">Chelsea</option>
+                <option value="Man City">Man City</option>
+                <option value="Liverpool">Liverpool</option>
+            </optgroup>
+            <optgroup label="France">
+                <option value="PSG">PSG</option>
+                <option value="OM">OM</option>
+                <option value="Monaco">Monaco</option>
+                <option value="Lille">Lille</option>
+            </optgroup>
+            <optgroup label="Italy">Italy
+                <option value="Inter">Inter</option>
+                <option value="Milan">Milan</option>
+                <option value="Napoli">Napoli</option>
+                <option value="Atalanta">Atalanta</option>
+            </optgroup>
+    </select>
+    <p>Gender:</p><label>
+        <input type="radio" name="gender"value="male">Male</label>
+        <label><input type="radio" name="gender"value="female"> Female</label><label><input type="radio"name="gender"value="other"> Prefer not to say</label><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button>Submit</button>
+
+</form>    
+</body>
+</html>
