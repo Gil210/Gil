@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Workout Log </title>
+    <!-- Table styling -->
+    <style>
+        /* Table tag styling */
+        table{
+            width: 100%;
+            margin: 20px auto;
+            max-width: 600px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        /* Header and table data styling */
+        th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 12px;
+            text-align: left;
+        }
+        /* Thead alone styling */
+        thead{
+            background-color: #2c3e50;
+            color: white;
+        }
+        /* Tbody styling */
+        tbody{
+            border-bottom: 1px solid #ddd;
+        }
+        /* Tbody and table row hover styling */
+        tbody tr:hover{
+            background-color: #f1f1f1;
+        }
+        /* Table foot styling */
+        tfoot{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Table header -->
+    <header>
+        <h1>Weekly Workout Log</h1>
+    </header>
+    <main>
+        <!-- Main Table -->
+        <table>
+            <caption>Workout Log</caption>
+            <thead>
+                <th>Day</th>
+                <th>Exercise</th>
+                <th>Duration</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Running</td>
+                    <td>45 minutes</td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Weightlifting</td>
+                    <td>20 minutes</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Rest Day</td>
+                    <td> - </td>
+                    <td>Completed</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Yoga</td>
+                    <td>30 minutes</td>
+                    <td>Completed</td>
+                </tr>
+            </tbody>
+            <footer>
+            <tfoot>
+                <td colspan="4">Goal:4/5 days</td>
+            </tfoot>
+            </footer>
+        </table>
+    </main>
+</body>
+</html>
