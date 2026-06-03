@@ -1,0 +1,49 @@
+/* Font Face styling */
+@font-face {
+    font-family: STP;
+    src: url('/Fonts/Lora-Regular.woff2') format('woff2');
+    src: url('/Fonts/Lora-Regular.woff') format('woff');
+}
+/* Body styling */
+body{
+    font-family: STP;
+}
+/* Image tag */
+img{
+    width: 35%;
+     
+}
+/* Card class */
+.card{
+    /* text-align: center;
+    margin: auto; */
+    max-width: 300px;
+    box-shadow: 0px 0px 1.5px 0.5px black;
+    padding: 10px;
+    border-radius: 15px;
+    /* display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* flex-direction: column;  */
+}
+/* Text class */
+.text{
+    color: green;
+    font-size: 1.11rem;
+}
+/* Button ID (Style)  */
+#style{
+    border: none;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 95%;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+/* Hyper link hover */
+#style:hover{
+background-color: red;
+}
