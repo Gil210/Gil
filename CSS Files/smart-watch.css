@@ -1,0 +1,52 @@
+/* Image sizing */
+img{
+    width: 75%;
+}
+/* Universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* Card Container */
+.container{
+    max-width: 350px;
+    padding: 35px;
+    background-color: #836e6e98;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+/* Image holder */
+.image_holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 15px;
+}
+/* Buuton class */
+.collector{
+    color: white;
+    background-color: brown;
+    border-radius: 7px;
+    padding: 20px;
+}
+/* Hover effect */
+.collector:hover{
+    cursor: pointer;
+    background-color: #b86e6e;
+    transform: translateY(-5px);
+}
+/* Body fixing */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+/* Letter spacing */
+p,h1,h2{
+    word-spacing: 1px;
+}
